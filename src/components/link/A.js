@@ -1,4 +1,4 @@
-import { makeStyles } from "@material-ui/core";
+import { makeStyles, Typography } from "@material-ui/core";
 import Link from "next/link";
 import PropTypes from "prop-types";
 import { createElement } from "react";
@@ -12,13 +12,21 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
-const A = ({ href, as, children, base = false, component = "h5", props }) => {
+const A = ({
+  href,
+  as,
+  children,
+  base = false,
+  component = Typography,
+  props,
+  textProps,
+}) => {
   const classes = useStyles();
 
   return (
     <Link href={href} as={as} passHref>
       <a className={!base ? classes.a : null} {...props}>
-        {createElement(component, {}, children)}
+        {createElement(component, { ...textProps }, children)}
       </a>
     </Link>
   );

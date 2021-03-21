@@ -36,11 +36,6 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "49.1%",
     position: "relative",
   },
-  imageInner: {
-    width: "100%",
-    height: "100%",
-    position: "absolute",
-  },
   contentWrapper: {
     marginTop: theme.spacing(2),
     marginBottom: theme.spacing(4),
@@ -81,19 +76,14 @@ const useStyles = makeStyles((theme) => ({
 }));
 const Program = ({ data }) => {
   const classes = useStyles();
-  const { title, desc, detail, lastUpdated, closed, donation } = data;
+  const { title, desc, detail, lastUpdated, closed, donation, image } = data;
   return (
     <section className={classes.section}>
       <div className={classes.base}>
         <div className={classes.left}>
           <div className={classes.image}>
             {/* <div className={classes.imageInner}> */}
-            <Image
-              src="/program/program1.jpg"
-              layout="fill"
-              className={classes.imageInner}
-              style={{ objectFit: "cover" }}
-            />
+            <Image src={"/program/" + image} layout="fill" objectFit="cover" />
             <div
               style={{
                 position: "absolute",

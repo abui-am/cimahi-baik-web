@@ -1,10 +1,18 @@
-import { AppBar, makeStyles, useMediaQuery, useTheme } from "@material-ui/core";
+import {
+  AppBar,
+  makeStyles,
+  useMediaQuery,
+  useTheme,
+  Typography,
+} from "@material-ui/core";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import OutlinedButton from "../button/OutlinedButton";
 import A from "../link/A";
 import MenuIcon from "@material-ui/icons/Menu";
 import active from "~/json/active.json";
+import { useRouter } from "next/router";
+import CloseIcon from "@material-ui/icons/Close";
 
 const useStyles = makeStyles((theme) => ({
   base: {
@@ -47,11 +55,14 @@ const useStyles = makeStyles((theme) => ({
 }));
 const AppBarDesktop = ({ isStatic }) => {
   const classes = useStyles();
+  const { pathname } = useRouter();
+  console.log(pathname);
   const [isSticky, setIsSticky] = useState(isStatic);
   const handleScroll = () => {
     if (window.scrollY < 1) setIsSticky(false);
     else setIsSticky(true);
   };
+  const [info, setShowInfoTab] = useState(true);
 
   useEffect(() => {
     !isStatic && window.addEventListener("scroll", handleScroll);
@@ -100,7 +111,7 @@ const AppBarDesktop = ({ isStatic }) => {
                 className={classes.menuText}
                 style={{ color: !isSticky ? "#FFF" : null }}
               >
-                Ayo Berdonasi
+                {active.activeProgramTitle}
               </h5>
             </A>
             <OutlinedButton
@@ -115,6 +126,40 @@ const AppBarDesktop = ({ isStatic }) => {
           </div>
         </div>
       </div>
+      {isSticky && pathname !== "/programs/[id]" && info && (
+        <div
+          style={{
+            background: "rgb(42, 86, 147)",
+            padding: 16,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "baseline",
+            position: "relative",
+          }}
+        >
+          <Typography style={{ marginRight: 8 }}>
+            Khalil Ilmi Benua Najwa (19 tahun) Alumni SMKN 2 Cimahi, mengalami
+            kecelakaan lalu lintas saat akan pergi bekerja di Cimahi karena
+            tertabrak angkot.
+          </Typography>
+          <A
+            href={"/programs/" + active.activeProgramId}
+            textProps={{ style: { fontWeight: "bold" } }}
+          >
+            Ayo bantu!
+          </A>
+          <CloseIcon
+            style={{
+              height: 16,
+              width: 16,
+              position: "absolute",
+              right: 12,
+              bottom: 20,
+            }}
+            onClick={() => setShowInfoTab(false)}
+          />
+        </div>
+      )}
     </AppBar>
   );
 };
@@ -181,7 +226,7 @@ const AppBarMobile = () => {
       >
         <ListNav text="Siapa Kita?" href="/" />
         <ListNav
-          text="Ayo Berdonasi"
+          text={active.activeProgramTitle}
           href={"/programs/" + active.activeProgramId}
         />
         <ListNav text="Relawan #Batch2" href="/register" />
