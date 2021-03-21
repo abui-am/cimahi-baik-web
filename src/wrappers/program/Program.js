@@ -294,7 +294,7 @@ const DonationCard = ({ detail, lastUpdated, closed, donation }) => {
           <Count name="Donasi Terkumpul" value={accumulated} prefix="Rp" />
           <Count name="Donasi Tersalurkan" value={funneled} prefix="Rp" />
 
-          {!status === "closed" ? (
+          {status !== "closed" ? (
             <>
               <div className={classes.donasiWrapper}>
                 <div className={classes.textDonasiSekarang}>
