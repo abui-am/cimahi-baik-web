@@ -19,7 +19,7 @@ const division = [
     tupoksi: [
       "Mencari Donatur",
       "Menghubungkan dengan sistem sumber yang ada",
-      "Menjalin kerjasama dengqn pihak internal",
+      "Menjalin kerjasama dengan pihak internal",
     ],
   },
   {
