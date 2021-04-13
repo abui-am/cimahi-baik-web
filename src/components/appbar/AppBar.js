@@ -13,6 +13,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import active from "~/json/active.json";
 import { useRouter } from "next/router";
 import CloseIcon from "@material-ui/icons/Close";
+import { activeProgramTitle, isActive } from "../../json/active.json";
 
 const useStyles = makeStyles((theme) => ({
   base: {
@@ -126,7 +127,7 @@ const AppBarDesktop = ({ isStatic }) => {
           </div>
         </div>
       </div>
-      {isSticky && pathname !== "/programs/[id]" && info && (
+      {isActive && isSticky && pathname !== "/programs/[id]" && info && (
         <div
           style={{
             background: "rgb(42, 86, 147)",
@@ -138,9 +139,7 @@ const AppBarDesktop = ({ isStatic }) => {
           }}
         >
           <Typography style={{ marginRight: 8 }}>
-            Khalil Ilmi Benua Najwa (19 tahun) Alumni SMKN 2 Cimahi, mengalami
-            kecelakaan lalu lintas saat akan pergi bekerja di Cimahi karena
-            tertabrak angkot.
+            {activeProgramTitle}
           </Typography>
           <A
             href={"/programs/" + active.activeProgramId}

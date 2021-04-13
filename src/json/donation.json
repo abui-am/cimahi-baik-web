@@ -39,7 +39,7 @@
     },
     "donation": {
       "accumulated": 13528646,
-      "funneled": 0,
+      "funneled": 13528646,
       "status": "closed"
     },
     "lastUpdated": "2021-03-24T21:00:00+0700",

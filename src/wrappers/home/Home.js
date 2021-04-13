@@ -97,19 +97,16 @@ const Home = () => {
               duration={500}
               triggerOnce
             >
-              <h1 className={classes.title}>
-                Berbagi Kebahagiaan Bersama Cimahi Baik
-              </h1>
+              <h1 className={classes.title}>Ayo Bergabung Bersama Kami!</h1>
               <div className={classes.subtitle}>
-                Banyak di luar sana yang membutuhkan uluran tangan kita, ini
-                saatnya untuk berempati dengan menebarkan kebaikan secara
-                bersama-sama
+                Pendaftaran relawan #Batch2 sudah dibuka, ayo menebar kebaikan
+                bersama Cimahi Baik!
               </div>
             </Fade>
             <Zoom delay={1200} duration={300} triggerOnce>
               <OutlinedButton
-                text="Saya Ingin Menebar Kebaikan"
-                href="#start"
+                text="Daftar Sebagai Relawan"
+                href="/register"
                 style={{ color: "#fff" }}
               />
             </Zoom>
