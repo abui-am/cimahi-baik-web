@@ -25,7 +25,7 @@
   {
     "id": 2,
     "title": "Bantu Khalil Pulih Kembali",
-    "desc": "Khalil Ilmi Benua Najwa (19 tahun) Alumni SMKN 2 Cimahi, \\nmengalami kecelakaan lalu lintas saat akan pergi bekerja di Cimahi karena tertabrak mobil angkutan umum (angkot). Akibat kecelakaan tersebut Khalil mengalami patah tulang paha kiri dan setengah wajah hancur akibat kaki tertimpa mobil yang terbalik dan wajah yang membentur trotoar. \\n Khalil lulusan SMKN 2 Cimahi tahun lalu dan baru memulai bekerja sebagai karyawan kontrak di salah satu pabrik di daerah Cimahi, \n saat ini ia sedang dalam penanganan di RS Umum Daerah Cibabat, Cimahi.\nKhalil masih merasakan tidak nyaman di bagian wajah, juga masih merasakan sakit di daerah luka-lukanya. Kemarin (Rabu) telah dilaksanakan operasi wajah termasuk mata, operasi patah tulang paha kaki kiri, dan operasi kaki kanannya yang juga bermasalah. Pihak keluarga masih menunggu penjelasan lebih lengkap dari dokter mengenai masalah akibat kecelakannyaa (Diinformasikan hari ini/Kamis). Kemungkinan besar Khalil masih perlu penanganan lanjutan mengenai luka-lukanya terutama pada kedua matanya yang sangat bermasalah. Perkiraan total biaya yang dibutuhkan untuk penanganan lanjutan berkisar Rp 120.000.000 (seratus dua puluh juta rupiah) untuk rinciannya: Biaya rawat inap, operasi patah tulang paha kiri, operasi kaki kanan, operasi plastik wajah yang hancur, (kemungkinan besar) operasi cangkok mata, dan penanganan lanjutan lainnya.",
+    "desc": "Khalil Ilmi Benua Najwa (19 tahun) Alumni SMKN 2 Cimahi,mengalami kecelakaan lalu lintas saat akan pergi bekerja di Cimahi karena tertabrak mobil angkutan umum (angkot). Akibat kecelakaan tersebut Khalil mengalami patah tulang paha kiri dan setengah wajah hancur akibat kaki tertimpa mobil yang terbalik dan wajah yang membentur trotoar. Khalil lulusan SMKN 2 Cimahi tahun lalu dan baru memulai bekerja sebagai karyawan kontrak di salah satu pabrik di daerah Cimahi,saat ini ia sedang dalam penanganan di RS Umum Daerah Cibabat, Cimahi. Khalil masih merasakan tidak nyaman di bagian wajah, juga masih merasakan sakit di daerah luka-lukanya. Kemarin (Rabu) telah dilaksanakan operasi wajah termasuk mata, operasi patah tulang paha kaki kiri, dan operasi kaki kanannya yang juga bermasalah. Pihak keluarga masih menunggu penjelasan lebih lengkap dari dokter mengenai masalah akibat kecelakannyaa (Diinformasikan hari ini/Kamis). Kemungkinan besar Khalil masih perlu penanganan lanjutan mengenai luka-lukanya terutama pada kedua matanya yang sangat bermasalah. Perkiraan total biaya yang dibutuhkan untuk penanganan lanjutan berkisar Rp 120.000.000 (seratus dua puluh juta rupiah) untuk rinciannya: Biaya rawat inap, operasi patah tulang paha kiri, operasi kaki kanan, operasi plastik wajah yang hancur, (kemungkinan besar) operasi cangkok mata, dan penanganan lanjutan lainnya.",
     "image": "program2.jpg",
     "detail": {
       "title": "Donasi untuk Khalil Ilmi Benua Najwa",
@@ -44,5 +44,28 @@
     },
     "lastUpdated": "2021-03-24T21:00:00+0700",
     "closed": "2021-03-24T21:00:00+0700"
+  },
+  {
+    "id": 3,
+    "title": "Cimahi Baik Berbagi Kebaikan Ramadhan 3.0",
+    "desc": "Bulan ramadan tahun ini terasa berbeda dari tahun-tahun sebelumnya, karena pandemi Covid-19 belum berakhir. Banyak masyarakat yang terdampak akibat pandemi Covid-19 ini, tidak terkecuali sopir ojek online, juru parkir, sopir angkot, dan orang jalanan khususnya yang sudah lanjut usia. Sekarang saatnya kamu jadi bagian berbagi kebaikan untuk mereka, yuk! berbagi kebaikan ramadhan bersama Cimahi Baik nantinya donasi kamu akan disalurkan dalam bentuk nasi bungkus untuk berbuka puasa dan tunjangan hari raya (THR). Sasaran donasinya : Sopir ojek online,Juru parkir,Sopir Angkot,Orang jalanan lanjut usia Di wilayah Kota Cimahi. Kami membuka untuk semua pihak yang ingin berbagi kebaikan berkolaborasi bersama Cimahi Baik. salam Kebaikan",
+    "image": "program3.jpg",
+    "detail": {
+      "title": "Donasi untuk Berbagi Kebaikan Ramadhan",
+      "desc": "Cimahi Baik kembali untuk berbagi kebaikan di bulan Ramadan. Yuk salurkan donasimu ke : ",
+      "personInCharge": "Bank BCA a.n Yatni Rahayu ",
+      "bankNumber": 1393167258,
+      "contact": {
+        "name": "Whatsapp (Yatni Rahayu)",
+        "number": 6287893406973
+      }
+    },
+    "donation": {
+      "accumulated": 0,
+      "funneled": 0,
+      "status": "open"
+    },
+    "lastUpdated": "2021-04-30T14:00:00+0700",
+    "closed": "2021-05-12T21:00:00+0700"
   }
 ]
