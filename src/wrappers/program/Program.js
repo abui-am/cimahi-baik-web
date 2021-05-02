@@ -12,10 +12,15 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: -100,
     marginRight: -100,
     textAlign: "left",
+
     [theme.breakpoints.down("sm")]: {
       marginLeft: 0,
       marginRight: 0,
       marginTop: 24,
+    },
+    [theme.breakpoints.up("xl")]: {
+      marginLeft: 0,
+      marginRight: 0,
     },
   },
   base: {

@@ -13,7 +13,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import active from "~/json/active.json";
 import { useRouter } from "next/router";
 import CloseIcon from "@material-ui/icons/Close";
-import { activeProgramTitle, isActive } from "../../json/active.json";
+import { activeProgramTitleLong, isActive } from "../../json/active.json";
 
 const useStyles = makeStyles((theme) => ({
   base: {
@@ -57,7 +57,6 @@ const useStyles = makeStyles((theme) => ({
 const AppBarDesktop = ({ isStatic }) => {
   const classes = useStyles();
   const { pathname } = useRouter();
-  console.log(pathname);
   const [isSticky, setIsSticky] = useState(isStatic);
   const handleScroll = () => {
     if (window.scrollY < 1) setIsSticky(false);
@@ -139,7 +138,7 @@ const AppBarDesktop = ({ isStatic }) => {
           }}
         >
           <Typography style={{ marginRight: 8 }}>
-            {activeProgramTitle}
+            {activeProgramTitleLong}
           </Typography>
           <A
             href={"/programs/" + active.activeProgramId}
