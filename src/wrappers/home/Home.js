@@ -8,6 +8,7 @@ import FirstProgram from "./FirstProgram";
 import Galery from "./Galery";
 import JoinUs from "./JoinUs";
 import VideoSection from "./VideoSection";
+import json from "../../json/hero.json";
 
 const useStyles = makeStyles((theme) => ({
   image: { objectFit: "cover", width: "100%", height: "100vh" },
@@ -78,6 +79,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 const Home = () => {
   const classes = useStyles();
+  const { title, link, subtitle, linkButtonText } = json;
 
   return (
     <section className={classes.section}>
@@ -97,16 +99,13 @@ const Home = () => {
               duration={500}
               triggerOnce
             >
-              <h1 className={classes.title}>Ayo Bergabung Bersama Kami!</h1>
-              <div className={classes.subtitle}>
-                Pendaftaran relawan #Batch2 sudah dibuka, ayo menebar kebaikan
-                bersama Cimahi Baik!
-              </div>
+              <h1 className={classes.title}>{title}</h1>
+              <div className={classes.subtitle}>{subtitle}</div>
             </Fade>
             <Zoom delay={1200} duration={300} triggerOnce>
               <OutlinedButton
-                text="Daftar Sebagai Relawan"
-                href="/register"
+                text={linkButtonText}
+                href={link}
                 style={{ color: "#fff" }}
               />
             </Zoom>
